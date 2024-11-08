@@ -28,4 +28,13 @@ public class AppTest {
     	int actual=a.sum(0, 0);
     	assertEquals(excepted, actual);
     }
+    @Test
+    public void testWithMixedValues() {
+    	App a=new App();
+    	int excepted=10;
+    	int actual=a.sum(-10, 200);
+    	assertEquals(excepted, actual);
+    }
+    
+    
 }
